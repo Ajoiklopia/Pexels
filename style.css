@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: url("./Image/Background.jpg") center / cover no-repeat ;
+    display: flex;
+    flex-direction: column;
+}
+.gradient{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(45, 189, 16, 0.322), rgba(55, 9, 107, 0.39) );
+}
+.header{
+    width: 100%;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.header > a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    border: 1px solid #fff;
+    padding: 5px 20px;
+}
+h1{
+    font-size: 120px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+p{
+    padding-top: 10px;
+}
+.main{
+    margin-top: 200px;
+    text-align: center;
+}
+nav {
+    margin: auto;
+    margin-top: 20px;
+    padding-top: 10px;
+    width: 50%;
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+li > a{
+    color: #fff;
+    text-decoration: overline;
+    font-size: 24px;
+}
+.bottom{
+    width: 100%;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between; 
+    position: absolute;
+    bottom: 0;
+}
+a{
+    color: #fff;
+    text-decoration: none;   
+}
+.left-block > a{
+    padding: 5px;
+}
+
+@media(max-width: 600px) {
+
+    h1 {
+        font-size: 70px;
+    }
+
+    ul {
+        display: block;
+    }
+
+}
+
+@media(max-width: 400px) {
+
+    .main {
+        margin-top: 60px;
+    }
+
+    li > a {
+        border: 1px solid #fff;
+        padding: 3px 30px;
+        text-decoration: none;
+        font-size: 12px;
+        background: rgba(0, 255, 55, 0.123);
+    }
+
+    li {
+        margin: 10px 0px;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    .right-block > a {
+        font-size: 12px;
+        text-decoration: line-through;
+    }
+
+    .header > a {
+        font-size: 18px;
+    }
+
+}
+
